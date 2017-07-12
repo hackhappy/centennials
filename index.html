@@ -1,45 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+    <meta charset="UTF-8">
+    <title>particles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 <body>
-<script src='index.js'></script>
-<link rel="stylesheet" type="text/css" href="index.css">
-<header class="main-head" style="background-image: url(header.png); height: 100%">
-	<div class='logo'></div>
-	<nav>
-            <a href="works.html">WORKS</a>
-            <a href="about.html">ABOUT US</a>
-            <a href="blog.html">BLOG</a>
-            <a href="contacts.html">CONTACTS</a>
-        </nav>
-</header>
+<div class="header">
+    <div class="logo"></div>
+    <div class="header-text"><h1>CENTENNIALS</h1></div>
+</div>
+
+
+
+<div class="container">
+    <h1 class="text-center text-muted">HOVER-EFFECT CSS</h1>
+    <div class="row">
+        <div class="col-xs-6 col-sm-3 hover-zoomin">
+            <a href="#" title="">
+                <img src="http://lorempixel.com/260/260/nature/1/" alt=""/>
+            </a>
+            <h4 class="text-center">Hover-ZoomIn</h4>
+        </div>
+        <div class="col-xs-6 col-sm-3 hover-fade">
+            <a href="#" title="">
+                <img src="http://lorempixel.com/260/260/nature/2/" alt=""/>
+            </a>
+            <h4 class="text-center">Hover-Fade</h4>
+        </div>
+        <div class="col-xs-6 col-sm-3 hover-blur">
+            <a href="#" title="">
+                <img src="http://lorempixel.com/260/260/nature/3/" alt=""/>
+                <h2><span class="text-white">Hover Blur</span></h2>
+            </a>
+            <h4 class="text-center">Hover-Blur</h4>
+        </div>
+        <div class="col-xs-6 col-sm-3 hover-mask">
+            <a href="#" title="">
+                <img src="http://lorempixel.com/260/260/nature/4/" alt=""/>
+                <h2><span class="glyphicon glyphicon-search"></span></h2>
+            </a>
+            <h4 class="text-center">Hover-Mask</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-3 hover-zoomout">
+            <a href="" title="">
+                <img src="http://lorempixel.com/260/260/nature/5/" alt="" />
+            </a>
+            <h4 class="text-center">Hover-Zoomout</h4>
+        </div>
+        <div class="col-xs-6 col-sm-3 hover-blurout">
+            <a href="#" title="">
+                <img src="http://lorempixel.com/260/260/nature/6/" alt=""/>
+                <h2><span class="glyphicon glyphicon-search"></span></h2>
+            </a>
+            <h4 class="text-center">Hover-Blurout</h4>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="overlay-item overlay-effect">
+                <img src="http://lorempixel.com/260/260/nature/7/" alt="" />
+                <div class="mask">
+                    <h3>OVERLAY</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus doloremque natus quidem id.
+                    </p>
+                    <a href="#" class="btn btn-default">Read More</a>
+                </div>
+            </div>
+            <h4 class="text-center">Overlay Text</h4>
+        </div>
+        <!-- Hover-Fall Effect-->
+        <div class="col-xs-6 col-sm-3">
+            <div class="fall-item fall-effect">
+                <img src="http://lorempixel.com/260/260/nature/8/"/>
+                <div class="mask">
+                    <h2>Hover Fall</h2>
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                    <a href="#" class="btn btn-default">Read More</a>
+                </div>
+            </div>
+            <h4 class="text-center">Hover-Fall</h4>
+        </div>
+    </div>
+</div>
+
+
+<div style="height: 2000px"></div>
+
+
+
+
+<div class="footer">
+    <div class="logo-footer"></div>
+         <div class="social"></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container">-->
+<!--<div class="header">-->
+
+<!--<nav>-->
+<!--<a href="works.html">WORKS</a>-->
+<!--<a href="about.html">ABOUT US</a>-->
+<!--<a href="blog.html">BLOG</a>-->
+<!--<a href="contacts.html">CONTACTS</a>-->
+<!--</nav>-->
+
+<!--<h1 id="header-text">CENTENNIALS</h1>-->
+<!--<h2 id="header-text2">design</h2>-->
+<!--</div>-->
+<!--<div class="mainbody">-->
+<!--<div class="works">-->
+<!--<p>asdasdasdasd</p>-->
+<!--</div>-->
+
+<!--<div class="services">-->
+<!--<p>asdasdsadsadasdasdasdasdas</p>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--<div class="footer">-->
+<!--<h2>its footer</h2>-->
+<!--</div>-->
+<!--</div>-->
+
+
 <!--
-<div class="content gallery">
+<header>
+    <div class="main-head">
+    <div class='logo'></div>
+    <nav>
+        <a href="works.html">WORKS</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contacts.html">CONTACTS</a>
+    </nav>
+    </div>
+</header>
+-->
 
-		<a class="sv" href="img/images/1.jpg"><img src="img/dummy.png" data-original="img/images/1.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/2.jpg"><img src="img/dummy.png" data-original="img/images/2.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/3.jpg"><img src="img/dummy.png" data-original="img/images/3.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/4.jpg"><img src="img/dummy.png" data-original="img/images/4.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/5.jpg"><img src="img/dummy.png" data-original="img/images/5.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/6.jpg"><img src="img/dummy.png" data-original="img/images/6.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/7.jpg"><img src="img/dummy.png" data-original="img/images/7.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/8.jpg"><img src="img/dummy.png" data-original="img/images/8.jpg" alt="Alt"></a>
-		<a href="img/images/9.jpg"><img src="img/dummy.png" data-original="img/images/9.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/10.jpg"><img src="img/dummy.png" data-original="img/images/10.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/1.jpg"><img src="img/dummy.png" data-original="img/images/1.jpg" alt="Alt"></a>
-		<a href="img/images/2.jpg"><img src="img/dummy.png" data-original="img/images/2.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/3.jpg"><img src="img/dummy.png" data-original="img/images/3.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/4.jpg"><img src="img/dummy.png" data-original="img/images/4.jpg" alt="Alt"></a>
-		<a href="img/images/5.jpg"><img src="img/dummy.png" data-original="img/images/5.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/6.jpg"><img src="img/dummy.png" data-original="img/images/6.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/7.jpg"><img src="img/dummy.png" data-original="img/images/7.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/8.jpg"><img src="img/dummy.png" data-original="img/images/8.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/9.jpg"><img src="img/dummy.png" data-original="img/images/9.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/10.jpg"><img src="img/dummy.png" data-original="img/images/10.jpg" alt="Alt"></a>
 
-	</div>
-	</-->
+
+
+<!--
+
+<div class="count-particles">
+    <span class="js-count-particles">particles</span>
+</div> -->
+<!--<div class="container" style="color: #ffffff;">-->
+<!--
+</div>
+<!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+<script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+
+<script src="js/index.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
 </body>
 </html>
