@@ -6,14 +6,14 @@
 particlesJS("particles-js", {
     "particles": {
         "number": {
-            "value": 100,
+            "value": 80,
             "density": {
                 "enable": true,
                 "value_area": 800
             }
         },
         "color": {
-            "value": "#ffffff"
+            "value": "#333"
         },
         "shape": {
             "type": "circle",
@@ -53,7 +53,7 @@ particlesJS("particles-js", {
         "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#ffffff",
+            "color": "#222",
             "opacity": 0.4,
             "width": 1
         },
@@ -115,32 +115,13 @@ particlesJS("particles-js", {
 });
 
 
-/* ---- stats.js config ---- */
-
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
 
 /* ------ scrolling animated ------ */
 document.onscroll = function(){
     var body = document.getElementsByTagName('body')[0];
     var logo = document.getElementsByClassName('logo')[0];
-    if(body.scrollTop > 100)
-        logo.className += ' animated';
+    if(body.scrollTop > 200)
+        document.getElementsByClassName('animated')[0].style.display = 'block';
     else
-        logo.classList.remove("animated")
+        document.getElementsByClassName('animated')[0].style.display = 'none';
 };

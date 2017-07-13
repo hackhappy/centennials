@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>particles</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Bootstrap Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-
+    <!--<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>-->
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 <body>
+  <div id="particles-js"></div>
+
+<div class="flexbox-container">
+
 <div class="header">
-    <div class="logo"></div>
+
+    <div class="logo"><div class="animated"></div></div>
     <div class="header-text"><h1>CENTENNIALS</h1></div>
+
 </div>
 
 
 
-<div class="container">
+<div class="container-fluid hovers">
     <h1 class="text-center text-muted">HOVER-EFFECT CSS</h1>
     <div class="row">
         <div class="col-xs-6 col-sm-3 hover-zoomin">
@@ -94,7 +100,7 @@
 </div>
 
 
-<div style="height: 2000px"></div>
+<div style="height: 1000px"></div>
 
 
 
@@ -171,10 +177,14 @@
 <!--
 </div>
 <!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
-<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-<script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
 
+
+
+</div>
+
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 <script src="js/index.js"></script>
+<script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
@@ -183,6 +193,5 @@
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
 </body>
 </html>
