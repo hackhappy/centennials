@@ -124,7 +124,7 @@ canvas {
 .footer {
     max-height: 400px;
     height: 1287px;
-    color: fff;
+    color: #ffffff;
     background-image: url("../img/header.png");
     width: 2498px;
 }
