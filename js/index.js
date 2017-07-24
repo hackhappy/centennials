@@ -128,8 +128,8 @@ document.onscroll = function(){
 		$('.h-part-1').css('width', 'calc(50% - 40px)');
 		$('.h-part-2').css('width', 'calc(50% - 40px)');
 		$('.logo').addClass('in-header');
-		$('.header').css('background-color', 'white')
-		$('.header').find('.menu-item').css('color', 'black');
+		$('.header').css('background-color', 'black')
+		$('.header').find('.menu-item').css('color', 'white');
 		$('.header').css('box-shadow', '0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3)');
 	}
 	else

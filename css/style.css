@@ -42,6 +42,7 @@ canvas {
 	border-bottom:1px solid #fff;
 	text-align:center;
 	transition:0.350s all;
+    opacity: 0.8;
 }
 
 
@@ -63,7 +64,7 @@ canvas {
     margin-left: 50%;
 }
 .logo{
-    width: 150px;
+    width: 125px;
     height: 150px;
     position: absolute;
     top: 120px;
@@ -90,7 +91,7 @@ canvas {
 .in-header {
 	 position: fixed;
     z-index: 3;
-    width: 80px;
+    width: 67px;
     height: 80px;
     top: 0px;
 }
@@ -200,8 +201,8 @@ canvas {
 
 
 .bc-logo{
-	width:141px;
-	height:141px;
+	width:80px;
+	height:105px;
     position: absolute;
     top: 90px;
 	z-index:2;
