@@ -82,14 +82,23 @@
 	</div>
 	<!-- Hovers end -->
 	
-	
+	<div id="map" style="width:100%;height:400px;background:yellow"></div>
 	<div class='bottom-content'>
+<!--
 		<div class='bc-logo center'></div>
 		<div class='bc-inf center'>
 			<div class='bc-label'>CENTENNIALS</div>
 			<div class='bc-description'>design</div>
 		</div>
-		<div class='bc-social-icons center'>
+-->
+      
+       
+        <div class='bc-inf right'>
+            <div class='bc-label'>95, Amerikyan,Yerevan, Armenia</div>
+            <div class='bc-description'>tel: +374 11 200106</div>
+            <div class="bc-email">email: info@centenialsdesign.com</div>
+        </div>
+		<div class='bc-social-icons left'>
 			<div class='bcs-icon bcs-google'><a href="https://www.behance.net/centennialsdesign"><img src="img/social/Behance.png"></a></div>
 			<div class='bcs-icon bcs-instagram'><a href="https://www.instagram.com/centennialsdesign/"><img src="img/social/Instagram.png"></a></div>
 			<div class='bcs-icon bcs-youtube'><a href="https://www.youtube.com/channel/UCUHMtitX7eItVEdCNyBiavQ"><img src="img/social/Youtube.png"></a></div>
@@ -100,12 +109,14 @@
 	
 	
 	
+<!--
 	<div class='bottom-menu'>
 		<div class='menu-item'>WORKS</div>
 		<div class='menu-item'>ABOUT US</div>
 		<div class='menu-item'>BLOG</div>
 		<div class='menu-item'>CONTACTS</div>
 	</div>
+-->
 	
 	<div class="img-popup">
 		<div class='ip-close'>
@@ -119,7 +130,25 @@
 			</svg>
 		</div>
 	</div>
-	
+<!--
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3LHncqs_Q7LH7r7nNWbK5MS6FlrjGIDU&callback=initMap">
+    </script>
+       
+-->
+       
+    <script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(40.168706, 44.492225),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3LHncqs_Q7LH7r7nNWbK5MS6FlrjGIDU&callback=myMap"></script>
 	<script src='js/lib/particles.min.js'></script>
 	<script src="js/lib/jquery.min.js"></script>
 	<script src="js/index.js"></script>

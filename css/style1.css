@@ -202,6 +202,10 @@ canvas {
 	height: 0;
 }
 
+#map {
+        height: 400px;
+        width: 100%;
+       }
 
 .bc-logo{
 	width:80px;
@@ -221,31 +225,39 @@ canvas {
     top: 310px;
     color: white;
 	text-align:center;
+    margin-right: 130px;
 	z-index: 2;
+    right: 0;
 }
 .bc-label{
     padding: 0.5rem 0;
-    font-size: 2em;
+    font-size: 1.1em;
     white-space: nowrap;
 }
 .bc-description{
     padding: 0.0rem 0;
-    font-size: 1.0em;
+    font-size: 1.1em;
+}
+.bc-email{
+    padding: 0.0rem 0;
+    font-size: 1.1em;
 }
 .bc-social-icons{
-	margin-top: 420px;
+	margin-top: 350px;
 	width:50%;
 	text-align:center;
 	
 }
+/*
 .bc-social-icons a {
     width: 50px;
     height: 50px;
 }
+*/
 
 .bc-social-icons a img{
-    width: 50px;
-    height: 50px;
+    width: 37px;
+    height: 38px;
 }
 
 
