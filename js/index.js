@@ -156,4 +156,11 @@ $(document).ready(function(){
 	})
 })
 
-
+//document.onscroll = function() {
+//    var body = document.getElementsByClassName('body')[0];
+//    var bc-logo = document.getElementsByClassName('bc-logo'[0]);
+//    if (logo.scrollTop>70) {
+//        $('.logo').removeClass('in-header');
+//    }
+//}
+//
