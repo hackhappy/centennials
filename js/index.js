@@ -64,7 +64,7 @@ particlesJS("particles-js", {
             "random": false,
             "straight": false,
             "out_mode": "out",
-            "bounce": false,
+            "bounce": true,
             "attract": {
                 "enable": false,
                 "rotateX": 600,
@@ -80,7 +80,7 @@ particlesJS("particles-js", {
                 "mode": "grab"
             },
             "onclick": {
-                "enable": true,
+                "enable": false,
                 "mode": "push"
             },
             "resize": true
@@ -114,14 +114,46 @@ particlesJS("particles-js", {
     "retina_detect": true
 });
 
+function open_img()
+{
+	
+}
 
 
-/* ------ scrolling animated ------ */
 document.onscroll = function(){
     var body = document.getElementsByTagName('body')[0];
     var logo = document.getElementsByClassName('logo')[0];
-    if(body.scrollTop > 200)
-        document.getElementsByClassName('animated')[0].style.display = 'block';
-    else
-        document.getElementsByClassName('animated')[0].style.display = 'none';
+    if(body.scrollTop > 50)
+	{
+		$('.h-part-1').css('width', 'calc(50% - 40px)');
+		$('.h-part-2').css('width', 'calc(50% - 40px)');
+		$('.logo').addClass('in-header');
+		$('.header').css('background-color', 'white')
+		$('.header').find('.menu-item').css('color', 'black');
+		$('.header').css('box-shadow', '0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3)');
+	}
+	else
+	{
+		$('.logo').removeClass('in-header');
+		$('.h-part-1').css('width', '50%');
+		$('.h-part-2').css('width', '50%');
+		$('.header').css('background-color', 'transparent')
+		$('.header').find('.menu-item').css('color', 'white')
+		$('.header').css('box-shadow', '0 0 0 0');
+	}
 };
+
+$(document).ready(function(){
+	$('.galery-image').click(function(){
+		var url = $(this).css('background-image');
+		$('.img-popup').css('background-image', url);
+		$('.img-popup').show();
+		$('body').css('overflow', 'hidden');
+	})
+	$('.ip-close').click(function(){
+		$('.img-popup').hide();
+		$('body').css('overflow', 'auto');
+	})
+})
+
+
