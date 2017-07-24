@@ -147,7 +147,6 @@ canvas {
     position: absolute;
     z-index: 2;
     top: 1200px;
-/*	background-image:url('../img/wall.png');*/
 	background-color: black;
     background-position: center;
     background-repeat: no-repeat;
