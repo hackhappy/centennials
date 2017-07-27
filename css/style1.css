@@ -3,9 +3,12 @@
     margin:0;
     padding:0;
 	user-select:none;
-	font-family: 'Zilla Slab', serif;
 }
-
+@font-face {
+    font-family: Futura;
+    src: url('/fonts/FUTURA-LIGHT.TTF') format('truetype');
+    font-weight: normal;
+}
 
 
 /* ---- particles.js container ---- */
@@ -76,7 +79,7 @@ canvas {
 }
 .menu-item{
 	display:inline-block;
-	font-size:1.2em;
+	font-size:1.0em;
 	color:white;
 	margin:15px;
 	line-height:45px;
@@ -111,10 +114,12 @@ canvas {
     padding: 0.5rem 0;
     font-size: 3em;
     white-space: nowrap;
+    letter-spacing: 0.6em;
 }
 .si-description{
     padding: 0.5rem 0;
     font-size: 1.3em;
+    letter-spacing: 0.6em;
 }
 
 .galery{
@@ -126,7 +131,7 @@ canvas {
     top: 600px;
 }
 .galery-image{
-	width:20%;
+	width:25%;
 	height:300px;
 	display:inline-block;
 	vertical-align:top;
@@ -311,5 +316,32 @@ canvas {
 
 
 @media screen and (max-width: 480px) {
-    
+    html{
+        -webkit-text-size-adjust:none;
+    }
+    .site-inf{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .si-label{
+        font-size: 90%;
+    }
+    .gallery{
+        max-width: 100%;
+        height: auto;
+    }
+    .gallery-image{
+        top:40px;
+        width: 50%;
+    }
+    .gallery:hover{
+        background-size: auto;
+    }
+    .os-wrapper{
+        width: 100%;
+    }
+    .os-logos{
+      
+    }
 }

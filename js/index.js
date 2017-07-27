@@ -143,18 +143,18 @@ document.onscroll = function(){
 	}
 };
 
-$(document).ready(function(){
-	$('.galery-image').click(function(){
-		var url = $(this).css('background-image');
-		$('.img-popup').css('background-image', url);
-		$('.img-popup').show();
-		$('body').css('overflow', 'hidden');
-	})
-	$('.ip-close').click(function(){
-		$('.img-popup').hide();
-		$('body').css('overflow', 'auto');
-	})
-})
+//$(document).ready(function(){
+//	$('.galery-image').click(function(){
+//		var url = $(this).css('background-image');
+//		$('.img-popup').css('background-image', url);
+//		$('.img-popup').show();
+//		$('body').css('overflow', 'hidden');
+//	})
+//	$('.ip-close').click(function(){
+//		$('.img-popup').hide();
+//		$('body').css('overflow', 'auto');
+//	})
+//})
 
 //document.onscroll = function() {
 //    var body = document.getElementsByClassName('body')[0];
